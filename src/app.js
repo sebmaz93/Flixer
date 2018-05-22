@@ -8,7 +8,7 @@ import AppRouter from "./router/AppRouter";
 import Amplitude from "react-amplitude";
 
 
-Amplitude.init("527a03e96c3fca750c7928e176944cd1");
+Amplitude.init("");
 //Amplitude.setUserId(jwt.user);
 
 require("!style-loader!css-loader!./j-js/video-js.css");
