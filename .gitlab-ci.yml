@@ -1,7 +1,7 @@
 image: docker:latest
 
 variables:
-  REPOSITORY_URL: 472016498400.dkr.ecr.us-east-1.amazonaws.com/plix-web
+  REPOSITORY_URL:
 
 services:
 - docker:dind
@@ -41,8 +41,7 @@ build_dev:
 deploy_prod:
   stage: deploy
   script:
-    - ecs-deploy -c plix-production --service-name plix-web-production --min 0 --max 100 --image $REPOSITORY_URL:$CI_BUILD_REF  --timeout 600 --region us-east-1 --verbose
-  only:
+      only:
     - master
   tags:
     - docker
@@ -50,8 +49,7 @@ deploy_prod:
 deploy_dev:
   stage: deploy
   script:
-    - ecs-deploy -c plix-development --service-name plix-web-development --min 0 --max 100 --image $REPOSITORY_URL:$CI_BUILD_REF  --timeout 600 --region us-east-1
-  only:
+     only:
     - development
   tags:
     - docker
