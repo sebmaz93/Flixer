@@ -1,0 +1,95 @@
+.info {
+	max-width: 80rem;
+	margin: 0;
+	font-weight: 200;
+}
+
+.about {
+	/*padding: 0 0 0 4.5rem;*/
+}
+
+.heading {
+}
+
+.title {
+	font-size: 3rem;
+	margin-bottom: 3.5rem;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+.description {
+	display: inline;
+	width: 37rem;
+	height: 10.5rem;
+	font-size: 2rem;
+	line-height: 1.5;
+}
+
+/*.image {
+	float: left;
+	width: 28rem;
+	height: 43rem;
+	object-fit: contain;
+}
+
+.image > img {
+	width: 25rem;
+	height: 43rem;
+}
+
+/*.episodes {
+	font-size: 1.5rem;
+	color: #50585d;
+	font-family: Helvetica;
+	line-height: 1.53;
+}*/
+
+/*.category {
+	font-size: 1.5rem;
+	color: #50585d;
+	font-family: Helvetica;
+	line-height: 1.53;
+	margin-bottom: 1rem;
+}*/
+
+/*.year {
+	display: inline;
+	font-family: Helvetica;
+	font-size: 1.5rem;
+	line-height: 1.8;
+	border-radius: 3px;
+	padding: 2px 6px;
+	background-color: #d8d8d8;
+	color: #0b406b;
+	margin-bottom: 1rem;
+}*/
+
+/*.buttons {
+	margin-top: 3rem;
+}*/
+
+/*.lista {
+	list-style: none;
+	cursor: pointer;
+}*/
+
+/*.lista > li {
+	display: inline-block;
+	margin-right: 3.1rem;
+	font-size: 1.5rem;
+}*/
+
+/*.lista > li .iconText {
+	margin-left: 2.5rem;
+}*/
+
+/*.play,
+.fav {
+	position: absolute;
+}*/
+
+/*.lista > li:hover  svg path {
+	fill: #36a3db;
+	stroke: #36a3db;
+}*/

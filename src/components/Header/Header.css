@@ -1,0 +1,181 @@
+.bar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 2rem 0 1rem;
+  background-color: #122635;
+  z-index: 4; /* on top of story bar */
+}
+
+.logo {
+  max-height: 25px;
+  margin: 0 5rem 0 5rem;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.navList > li {
+  font-family: Helvetica;
+}
+
+.navItem {
+  padding: 0 2rem 0 2rem;
+  font-size: 1.6rem;
+  color: rgb(235, 232, 232) !important;
+  letter-spacing: -0.4px;
+  transition: border-bottom 0.3s;
+}
+
+.navItem:hover {
+  font-weight: 500;
+  color: #4dcdff !important;
+}
+
+:global(.isActive) {
+  font-weight: 500;
+  color: #4dcdff !important;
+}
+
+.icons {
+  list-style: none;
+  margin-left: auto;
+  margin-right: 1em;
+}
+
+.icons > li {
+  display: inline-block;
+  margin-right: 3.5rem;
+}
+
+.icon {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon > svg {
+  width: 2rem;
+}
+
+.icon > svg > g {
+  fill: #9096a0;
+  transition: fill 0.2s ease-in-out;
+}
+
+.icon > svg:hover > g {
+  fill: #4dcdff;
+}
+
+.searchBox {
+  display: inline-block;
+  position: relative;
+  height: 3.1rem;
+}
+
+.searchText {
+  display: inline-block;
+  position: absolute;
+  height: 2.4rem;
+  background-color: transparent;
+  color: white;
+  border: none;
+  right: 0;
+  height: 32px;
+  font-size: initial;
+  padding: 0px 18px 0px 2px;
+  border-radius: 7px;
+  width: 0px;
+  z-index: 3;
+  cursor: pointer;
+  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+}
+
+.searchText:focus:hover {
+  outline: none;
+  border: 2px #4dcdff solid;
+}
+
+.searchText:focus ~ .searchIcon > .icon > svg > g {
+  fill: #4dcdff;
+}
+
+.searchText:hover ~ .searchIcon > .icon > svg > g {
+  fill: #4dcdff;
+}
+
+.searchText:focus {
+  outline: none;
+  border: 2px #4dcdff solid;
+  width: 224px;
+  z-index: 1;
+  cursor: text;
+}
+
+.searchIcon {
+  display: inline-block;
+  float: right;
+  color: #4dcdff;
+  z-index: 2;
+}
+
+.icon:focus > svg > g {
+  fill: #4dcdff;
+}
+
+.icon:focus {
+  outline: none;
+}
+
+.notification {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  height: auto;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.4s ease-out, visibility 0.4s ease-out, opacity 0.4s ease-out;
+  z-index: -100;
+}
+
+.notificationIcon:focus > .notification {
+  opacity: 1;
+  visibility: initial;
+  max-height: 600px;
+  z-index: 3;
+}
+
+.profile {
+  height: 100px;
+  right: 0;
+  position: absolute;
+  top: 60px;
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-out, visibility 0.4s ease-out, opacity 0.4s ease-out;
+  z-index: -100;
+}
+
+.profileIcon:focus > .profile {
+  opacity: 1;
+  visibility: initial;
+  max-height: 300px;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 1180px) {
+}
+
+.none {
+  display: none;
+}

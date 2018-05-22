@@ -1,0 +1,35 @@
+FROM nginx
+
+COPY nginx/* /etc/nginx/conf.d/
+COPY public/* /usr/share/nginx/html/
+ADD nginx/healthcheck /usr/share/nginx/html/healthcheck
+
+#####################################
+# Install dependencies
+#####################################
+
+RUN apt-get update && apt install -y \
+    autoconf \
+    automake \
+    libtool \
+    m4 \
+    zlib1g-dev \
+    libgmp-dev \
+    net-tools \
+    netcat \
+    vim \
+    wget \
+    gnupg  \
+    git \
+    zip
+    
+#####################################
+# Install NewRelic
+#####################################
+RUN echo "deb http://nginx.org/packages/debian/ squeeze nginx" > /etc/apt/sources.list.d/nginx.list
+RUN apt-get update
+RUN apt-get install nginx-nr-agent -y --allow-unauthenticated
+COPY nginx/nginx-nr-agent.ini /etc/nginx-nr-agent/nginx-nr-agent.ini
+RUN /etc/init.d/nginx-nr-agent start
+#CMD service nginx-nr-agent start
+#CMD service nginx-nr-agent status

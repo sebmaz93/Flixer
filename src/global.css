@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #122635;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+button:disabled {
+  cursor: default;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+:global(.clearfix) {
+  zoom: 1;
+}
+:global(.right) {
+  float: right;
+}
+:global(.left) {
+  float: left;
+}
+:global(.clearfix:after) {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+:global(.react-countdown-clock) {
+  display: inline-block !important;
+  float: right !important;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+
+/* STANDARD SCREEN RESOLUTIONS */
+/* 16:10 : 1280×800, 1440×900, 1680×1050, 1920×1200 and 2560×1600. */
+/* 16:9 : 1024×576, 1152×648, 1280×720, 1366×768, 1600×900, 1920×1080, 2560×1440 and 3840×2160. */

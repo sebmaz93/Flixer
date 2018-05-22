@@ -1,0 +1,68 @@
+:global(.slide-dots__dahsboard) {
+  position: absolute !important;
+  bottom: 2rem !important;
+}
+:global(.slide-dots__dahsboard li button:before) {
+  font-size: 1.2rem !important;
+  color: white !important;
+  opacity: 0.5 !important;
+}
+:global(.slide-dots__dahsboard li.slick-active button:before) {
+  color: white !important;
+  opacity: 1 !important;
+}
+.slider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32vw !important;
+  border: none !important;
+}
+.info {
+  color: #ffffff;
+  bottom: 1.6rem;
+  display: inline-block;
+  position: absolute;
+  bottom: 6.2rem;
+  margin-left: 3.5rem;
+}
+.episode {
+  font-size: 2.1rem;
+}
+.title {
+  padding-top: 1rem;
+  font-size: 5rem;
+}
+
+.button {
+  padding-top: 2rem;
+}
+
+.buttons {
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.play > svg {
+  width: 1.5rem;
+}
+.fav > svg {
+  width: 2rem;
+}
+.buttons:hover > .play path {
+  fill: #0b406b;
+}
+.buttons:hover > .fav path {
+  stroke: #0b406b;
+  fill: #0b406b;
+}
+.buttons > p {
+  padding-left: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.bannerVideo{
+  max-width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}

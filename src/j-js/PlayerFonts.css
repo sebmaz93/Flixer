@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "PlayerFonts";
+  src: url("../fonts/PlayerFonts.eot");
+  src: url("../fonts/PlayerFonts.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/PlayerFonts.woff") format("woff"),
+    url("../fonts/PlayerFonts.ttf") format("truetype"),
+    url("../fonts/PlayerFonts.svg#PlayerFonts") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class*="icon-"]:before {
+  display: inline-block;
+  font-family: "PlayerFonts";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-display:before {
+  content: "\0041";
+}
+.icon-fullscreen:before {
+  content: "\0042";
+}
+.icon-icon-ios-sound-up:before {
+  content: "\0043";
+}
+.icon-idioma:before {
+  content: "\0044";
+}
+.icon-pause:before {
+  content: "\0045";
+}
+.icon-play-preview:before {
+  content: "\0046";
+}
+.icon-play:before {
+  content: "\0048";
+}
+.icon-arrow-copy:before {
+  content: "\0052";
+}

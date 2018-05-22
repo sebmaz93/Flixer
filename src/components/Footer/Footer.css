@@ -1,0 +1,59 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  /*margin-top: 10rem;*/
+}
+
+.bar {
+  position: relative;
+  /*  bottom: 0;
+  left: 0;*/
+  width: 100%;
+  height: 4.5rem;
+  font-size: 1.8rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lista {
+  float: left;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.lista > li {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-left: 3.5rem;
+  font-family: Helvetica;
+}
+.lista > li a {
+  color: #fff;
+}
+
+.lista > li a:hover {
+  opacity: 0.5;
+}
+
+.social {
+  float: right;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.social > li {
+  display: inline-block;
+}
+
+.icon {
+  padding: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.insta:hover > svg path,
+.face:hover > svg path,
+.twit:hover > svg path,
+.in:hover > svg path {
+  fill: #36a3db;
+}

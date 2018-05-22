@@ -1,0 +1,15 @@
+:global(.mainPlayer) {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+:global(.mainPlayer > .vjs-big-play-button) {
+  border-radius: 100px !important;
+  font-size: 7em !important;
+  height: 1.5em !important;
+  width: 1.5em !important;
+  top: 50% !important;
+  left: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

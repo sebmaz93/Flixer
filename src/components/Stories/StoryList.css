@@ -1,0 +1,21 @@
+.panel {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  position: relative;
+  padding: 3rem 0 3.1rem 0;
+  margin: 6rem 5rem 1rem 8rem;
+  z-index: 1; /* below of story bar */
+}
+
+.list {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* height: 5rem; */
+}
+
+.modalDiv {
+}

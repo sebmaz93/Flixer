@@ -1,0 +1,44 @@
+.container {
+  width: 48.8rem;
+  height: 20rem;
+  border-radius: 0 0 1rem 1rem;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 3;
+  padding: 1.8rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding-bottom: 1.5rem;
+}
+
+.header {
+  color: #5bc4f1;
+  font-size: 1.8rem;
+}
+
+.close {
+  border-radius: 50%;
+  height: 22px;
+  width: 22px;
+  background-color: black;
+  color: white;
+}
+
+.body {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 100;
+}
+
+.text {
+}

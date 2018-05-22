@@ -1,0 +1,6 @@
+node_modules/
+public/
+.vscode/
+.env.test
+.DS_Store
+.env

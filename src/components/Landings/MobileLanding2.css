@@ -1,0 +1,159 @@
+.bg {
+  background-color: #5dc3f0;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 3vh 0;
+}
+
+.logo {
+  background-image: url("../../assets/Mobile/mobile_osde.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  display: inline-block;
+  width: 80vw;
+  height: 7vh;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+}
+
+.previewLogo {
+  background-image: url("../../assets/Mobile/warning.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  display: inline-block;
+  width: 85vw;
+  height: 42vh;
+}
+
+.body {
+  margin-top: 1vh;
+  text-align: center;
+}
+
+.paragraph {
+}
+
+.title,
+.description {
+  font-size: calc(20px + 1vmin);
+  font-weight: 100;
+}
+
+.bold {
+  font-size: calc(24px + 1vmin);
+  margin-top: 1vh;
+  font-weight: 600;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5vh;
+}
+
+.icon_text {
+  font-size: calc(16px + 1vmin);
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 1.5vh;
+}
+
+.stores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.download_1 {
+  background-image: url("../../assets/Mobile/gplay.png");
+  background-position: center right;
+}
+
+.download_2 {
+  background-image: url("../../assets/Mobile/appst.png");
+  background-position: center left;
+}
+
+.download_1,
+.download_2 {
+  background-color: transparent;
+  height: calc(40px + 2vmin);
+  width: calc(125px + 5vmin);
+  outline: none;
+  background-size: contain;
+  border: none;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .download_1,
+  .download_2 {
+    height: calc(30px + 2vmin);
+    width: calc(100px + 5vmin);
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .logo {
+    width: 80vmin;
+    height: 7vmin;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0;
+  }
+
+  .previewLogo {
+    width: 80vmin;
+    height: 40vmin;
+  }
+
+  .title,
+  .description {
+    font-size: calc(15px + 0.5vmin);
+  }
+
+  .bold {
+    font-size: calc(16px + 0.5vmin);
+  }
+
+  .icon_text {
+    font-size: calc(14px + 0.5vmin);
+  }
+}
+
+@media only screen and (min-device-width: 740px) and (min-device-height: 780px) {
+  .title,
+  .description {
+    font-size: calc(24px + 1vmin);
+  }
+
+  .bold {
+    font-size: calc(26px + 1vmin);
+  }
+
+  .icon_text {
+    font-size: calc(21px + 1vmin);
+  }
+
+  .download_1,
+  .download_2 {
+    height: calc(50px + 2vmin);
+    width: calc(150px + 5vmin);
+  }
+}

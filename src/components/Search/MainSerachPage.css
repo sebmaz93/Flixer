@@ -1,0 +1,70 @@
+.container{
+	padding: 12rem 5rem 2rem;
+}
+.title {
+  color: #fff;
+  font-size: 2.5em;
+  line-height: 0.63;
+  font-weight: normal;
+  display: inline-block;
+}
+.backButton {
+  cursor: pointer;
+  width: 11rem;
+  display: inline-block;
+}
+.iconBack {
+  width: 1.7rem;
+  margin: 0 auto;
+  display: block;
+}
+.iconBack > svg {
+  width: 33px;
+}
+.iconBack:hover > svg > path {
+  stroke: gray;
+}
+.heading {
+  margin-bottom: 4rem;
+}
+.categories,
+.aligned {
+  margin-left: 11rem;
+  margin-bottom: 4rem;
+}
+.category {
+  border: 1px #0b406b solid;
+  color: #0b406b;
+  border-radius: 2.55rem;
+  height: 4.5rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.5rem;
+  line-height: 1.93;
+  font-family: SFProText, Helvetica, sans-serif;
+  background-color: #ffffff;
+  margin-right: 2rem;
+}
+.acrtiveCategory {
+  background-color: #0b406b;
+  color: #ffffff;
+}
+.search {
+  border: none;
+  border-bottom: 1px #ffffff solid;
+  padding: 1rem;
+  font-family: SFProText, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  background-color: #122635;
+}
+.search:focus {
+  outline: none;
+  border-color: #0b406b;
+}
+/* only development purposes */
+.recent {
+  min-height: 40rem;
+}
+.searchPage {
+  min-height: 40rem;
+}

@@ -1,0 +1,380 @@
+.bg {
+  background-color: #5dc3f0;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  padding-top: 25pt;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20pt;
+}
+
+.logo {
+  background-image: url("../../assets/Mobile/mobile_osde.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  display: inline-block;
+  width: 50%;
+  height: 60pt;
+}
+
+.preview {
+  margin-bottom: -15pt;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.previewLogo {
+  background-image: url("../../assets/Mobile/warning.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  display: inline-block;
+  width: 80%;
+  height: 200pt;
+}
+
+.body {
+  padding: 0 30pt 0 30pt;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+  margin: 10pt 0 20pt 0;
+}
+
+.title {
+  font-size: 15pt;
+  line-height: 22pt;
+  font-weight: 100;
+}
+
+.description {
+  font-size: 15pt;
+  line-height: 20pt;
+  font-weight: 100;
+}
+
+.bold {
+  font-size: 16pt;
+  line-height: 20pt;
+  font-weight: 600;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon_text {
+  font-size: 12pt;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 10pt;
+}
+
+.download {
+  background-image: url("../../assets/Mobile/playapp.png");
+  height: 55pt;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header {
+    padding-top: 5px;
+  }
+
+  .logo {
+    width: 40%;
+    height: 50pt;
+  }
+
+  .paragraph {
+    margin: 20pt 0 20pt 0;
+  }
+
+  .title,
+  .description {
+    font-size: 32pt;
+    margin: 0;
+    line-height: 44pt;
+  }
+
+  .bold {
+    margin-top: 14pt;
+    font-size: 35pt;
+    font-weight: 400;
+  }
+
+  .icon_text {
+    font-size: 24pt;
+  }
+
+  .download {
+    height: 90pt;
+  }
+
+  .icon_text {
+    font-size: 24pt;
+  }
+
+  .download {
+    height: 100pt;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .paragraph {
+    margin: 20pt 0 20pt 0;
+  }
+
+  .title,
+  .description {
+    font-size: 24pt;
+    margin: 0;
+    line-height: 38pt;
+  }
+
+  .bold {
+    margin-top: 10pt;
+    font-size: 28pt;
+    font-weight: 400;
+  }
+
+  .icon_text {
+    font-size: 20pt;
+  }
+
+  .download {
+    height: 80pt;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .paragraph {
+    margin: 20pt 0 20pt 0;
+  }
+
+  .title,
+  .description {
+    font-size: 24pt;
+    margin: 0;
+    line-height: 38pt;
+  }
+
+  .bold {
+    margin-top: 10pt;
+    font-size: 28pt;
+    font-weight: 400;
+  }
+
+  .icon_text {
+    font-size: 20pt;
+  }
+
+  .download {
+    height: 80pt;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2.5) and (orientation: landscape) {
+  .header {
+    padding-top: 0;
+    margin-bottom: 10pt;
+  }
+
+  .logo {
+    width: 30%;
+    height: 30pt;
+  }
+
+  .preview {
+    margin-bottom: -15pt;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+
+  .previewLogo {
+    background-position: center center;
+    width: 25%;
+    height: 120pt;
+  }
+
+  .paragraph {
+    margin: 10pt 0 10pt 0;
+  }
+
+  .title {
+    font-size: 13pt;
+    line-height: 20pt;
+  }
+
+  .description {
+    font-size: 13pt;
+    line-height: 20pt;
+  }
+
+  .bold {
+    font-size: 14pt;
+    line-height: 20pt;
+  }
+
+  .icon_text {
+    margin-bottom: 0;
+  }
+
+  .download {
+    height: 48pt;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .header {
+    padding-top: 5pt;
+    margin-bottom: 5pt;
+  }
+
+  .logo {
+    background-position: center center;
+    width: 65%;
+    height: 50pt;
+  }
+
+  .previewLogo {
+    background-position: center center;
+    width: 80%;
+    height: 220pt;
+  }
+
+  .paragraph {
+    margin: 10pt 0 25pt 0;
+  }
+
+  .icon_text {
+    font-size: 13pt;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 10pt;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .header {
+    padding-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    width: 30%;
+    height: 30pt;
+  }
+
+  .previewLogo {
+    width: 80%;
+    height: 100pt;
+  }
+
+  .paragraph {
+    margin: 10pt 0 5pt 0;
+  }
+
+  .title,
+  .description {
+    font-size: 13pt;
+    margin: 0;
+    line-height: 20pt;
+  }
+
+  .bold {
+    font-size: 14pt;
+    font-weight: 400;
+  }
+
+  .download {
+    height: 35pt;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .header {
+    padding-top: 5pt;
+    margin-bottom: 5pt;
+  }
+
+  .logo {
+    background-position: center center;
+    width: 65%;
+    height: 50pt;
+  }
+
+  .previewLogo {
+    background-position: center center;
+    width: 80%;
+    height: 180pt;
+  }
+
+  .paragraph {
+    margin: 10pt 0 25pt 0;
+  }
+
+  .icon_text {
+    font-size: 13pt;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 10pt;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  .header {
+    padding-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 25%;
+    height: 25pt;
+  }
+
+  .previewLogo {
+    width: 80%;
+    height: 80pt;
+  }
+
+  .title,
+  .description {
+    font-size: 11pt;
+    margin: 0;
+    line-height: 16pt;
+  }
+
+  .bold {
+    font-size: 12pt;
+    font-weight: 400;
+  }
+
+  .icon_text {
+    font-size: 9pt;
+    margin-bottom: 5pt;
+  }
+
+  .download {
+    height: 35pt;
+    width: 100%;
+  }
+}

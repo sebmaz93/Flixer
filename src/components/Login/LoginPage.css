@@ -1,0 +1,73 @@
+video[poster]{
+height:100%;
+width:100%;
+}
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("../../assets/login_bg.jpg");
+  background-size: cover;
+  z-index: -10;
+}
+
+.overlay:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: rgba(84, 206, 253, 0.5);
+}
+
+.card {
+  position: absolute;
+  left: 70%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 20%;
+  /*overflow: hidden;*/
+  width: 43.8rem;
+  height: 47.8rem;
+  border-radius: 2rem;
+  -webkit-overflowscrolling: touch;
+  font-size: 1.6rem;
+}
+
+.logoImg {
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+  top: 30%;
+}
+
+.logoImg img {
+  width: 250px;
+}
+.video-bg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-bg-video{
+  min-width: 100vw;
+}
+.gradient-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#122635+0,122635+50,122635+100&1+0,0+50,1+100 */
+  background: -moz-linear-gradient(top, rgba(18,38,53,1) 0%, rgba(18,38,53,0) 50%, rgba(18,38,53,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(18,38,53,1) 0%,rgba(18,38,53,0) 50%,rgba(18,38,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(18,38,53,1) 0%,rgba(18,38,53,0) 50%,rgba(18,38,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#122635', endColorstr='#122635',GradientType=0 ); /* IE6-9 */
+
+}

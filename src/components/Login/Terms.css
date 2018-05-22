@@ -1,0 +1,109 @@
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("../../assets/BlurBg.png") no-repeat center center;
+  background-size: cover;
+  z-index: -10;
+}
+.overlay:before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background-color: rgba(84, 206, 253, 0.5);
+}
+
+.card {
+  position: absolute;
+  left: 70%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 20%;
+  overflow: hidden;
+  width: 43.8rem;
+  height: 47.8rem;
+  border-radius: 2rem;
+  background-color: #122534;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+  -webkit-overflowscrolling: touch;
+  font-size: 1.6rem;
+}
+
+.insideCard {
+  padding: 3.5rem 4.7rem 2.2rem 4.7rem;
+  position: relative;
+}
+
+.title {
+  width: 19.8rem;
+  height: 1.9rem;
+  font-size: 2rem;
+  line-height: 0.95;
+  text-align: left;
+  color: #0b406b;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+
+.content {
+  width: 34.4rem;
+  height: 27rem;
+  font-size: 1.3rem;
+  line-height: 1.46;
+  text-align: left;
+  color: #9096a0;
+  overflow: auto;
+  margin-bottom: 0.5rem;
+}
+
+.accept {
+  padding-top: 1.2rem;
+  width: 34.4rem;
+  height: 4.25rem;
+  border-radius: 0.4rem;
+  background-color: #5bc4f1;
+  color: #122634 !important;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 200;
+  position: absolute;
+  /*top: 50%;*/
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.disabled{
+  pointer-events: none;
+  color: grey;
+  opacity: 0.8;
+  background: #cccccc;
+}
+.accept-box{
+  text-align: center;
+  padding: 2rem;
+}
+.disabled-check{
+  pointer-events: none;
+  opacity: 0.6;
+}
+.disabled-check label{
+  color: #ccc;
+}
+.accept-check{
+  padding: 2rem;
+  margin-right: 0.6rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.accept-label{
+  color: white;
+  font-size: 1.5rem;
+
+}

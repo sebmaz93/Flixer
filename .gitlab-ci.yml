@@ -1,0 +1,57 @@
+image: docker:latest
+
+variables:
+  REPOSITORY_URL: 472016498400.dkr.ecr.us-east-1.amazonaws.com/plix-web
+
+services:
+- docker:dind
+
+stages:
+  - build
+  - deploy
+
+build_prod:
+  stage: build
+  script:
+    - npm install
+    - NODE_ENV=production npm run build
+    -  $(aws ecr get-login --no-include-email --region us-east-1)
+    - docker build -t $REPOSITORY_URL:$CI_BUILD_REF -f DockerfileProd .
+    - docker push $REPOSITORY_URL
+  only:
+    - master
+  tags:
+    - docker
+
+
+build_dev:
+  stage: build
+  script:
+    - npm install
+    - npm run builddev
+    -  $(aws ecr get-login --no-include-email --region us-east-1)
+    - docker build -t $REPOSITORY_URL:$CI_BUILD_REF -f DockerfileDev .
+    - docker push $REPOSITORY_URL
+  only:
+    - development
+  tags:
+    - docker
+
+
+deploy_prod:
+  stage: deploy
+  script:
+    - ecs-deploy -c plix-production --service-name plix-web-production --min 0 --max 100 --image $REPOSITORY_URL:$CI_BUILD_REF  --timeout 600 --region us-east-1 --verbose
+  only:
+    - master
+  tags:
+    - docker
+
+deploy_dev:
+  stage: deploy
+  script:
+    - ecs-deploy -c plix-development --service-name plix-web-development --min 0 --max 100 --image $REPOSITORY_URL:$CI_BUILD_REF  --timeout 600 --region us-east-1
+  only:
+    - development
+  tags:
+    - docker

@@ -1,0 +1,137 @@
+.arrow {
+  background-color: rgba(0, 0, 0, 0.316);
+  position: absolute;
+
+  cursor: pointer;
+  top: 7%;
+  width: 4rem;
+  height: 100%;
+}
+.rightArrowIcon {
+  width: 2.8rem;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.leftArrowIcon {
+  width: 2.8rem;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.right {
+  right: 0px;
+}
+.left {
+  z-index: 99;
+  left: 0px;
+}
+.slideItem {
+  border-radius: 3px;
+  cursor: pointer;
+}
+.slideItem > img {
+  display: block;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin: 7% auto;
+  width: 75%;
+  transition: ease-out 0.3s all;
+}
+.slideItem > img:hover {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+:global(.episodsSlider) {
+  min-height: 300px;
+}
+/* :global(.slick-slide) {
+  border: 2rem transparent solid;
+  transition: border-width 300ms linear;
+}
+:global(.slick-center) {
+  border-width: 0rem;
+} */
+
+.epi_main {
+  margin-top: 0;
+}
+
+.epi_heading {
+  margin-bottom: 2.5rem;
+  color: #36a3db;
+}
+
+.epi_seasons {
+  font-size: 2.05rem;
+  font-weight: 200;
+  font-family: Helvetica;
+  letter-spacing: -0.4px;
+  float: left;
+  margin-right: 1rem;
+}
+
+.epi_lista {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.epi_lista > li {
+  display: inline-block;
+}
+
+.epi_title {
+  color: #ffffff;
+}
+
+.epi_lista > li a {
+  width: 33px;
+  height: 33px;
+  margin: 0 0.3rem;
+  color: #9096a0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: border 0.3s;
+  border: 1px solid transparent;
+}
+
+/* a:focus must be changed to .isActive but not working right now since no to="" path in NAVLINK */
+.epi_lista > li a:focus {
+  color: #36a3db;
+  border: 1px solid #36a3db;
+}
+
+.about {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+.title {
+  font-size: 18px;
+  color: #36a3db;
+  margin-bottom: 0.6rem;
+}
+
+.length {
+  margin-bottom: 1rem;
+  font-size: 13px;
+}
+
+.description {
+  width: 23.5rem;
+  font-size: 13px;
+  line-height: 1.38;
+}
+.epi_number {
+  cursor: pointer;
+}
+.epi_number:hover {
+  opacity: 70%;
+}
